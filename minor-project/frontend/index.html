@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Urban Sound Recog</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.sound.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.sound.js"></script>
+    <script src="http://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="./script.js"></script>
+</head>
+<body>
+<div class="ui segment" id="screen">
+      <div class="header">
+            <p class="header-content">Urban Sound Classification</p>
+        </div>
+        <div class="output"></div>
+        <div class="body-container">
+                <div class="main">
+                        <div class="main-file-input">
+                            <input type="file" id="input-file" >
+                        </div>
+                        <span style="color : #fff; font-weight : 600; font-size : 20px"> or</span>
+                        <div class="main-record-input">
+                            <button id="record">record</button>
+                            <button id="stop">stop</button>
+                        </div>
+                        <button class="submit-btn">Submit</button>
+                </div>
+            </div>
+            <div class="ui inverted dimmer" id="loader" style="height: 100vh">
+                <div class="ui text loader">Loading</div>
+            </div>
+            <p></p>
+</div>
+
+
+</body>
+</html>
