@@ -39,7 +39,7 @@ cof = np.reshape(cof, (1,40))
 
 df_test = pd.DataFrame( columns = [i for i in range(40)], data = cof)
 
-model = pickle.load(open(r'/Users/sahilaiact/Desktop/minor-project-college/minor-project/app/finalized_model2.sav', 'rb'))
+model = pickle.load(open(r'/Users/sahilaiact/Desktop/minor-project-college/finalized_model2.sav', 'rb'))
 
 # model = pickle.load('E:\\urban sound\\Urban_Sound_Recognition-minor-project-\\ML\\finalized_model.sav')
 predictions = model.predict(df_test)
